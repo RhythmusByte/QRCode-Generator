@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL to QR Code</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+  
+      <!-- Nav Bar -->
+
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <a href="https://akhilmahesh.netlify.app">RhythmusByte</a>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="https://github.com/RhythmusByte">About</a></li>
+                <li><a href="https://rhythmusbytelinks.netlify.app">Contact</a></li>
+                <li><a href="https://akhilmahesh.netlify.app">Portfolio</a></li>
+            </ul>
+            <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <a href="https://github.com/RhythmusByte" class="action_btn">Source Code</a>
+        <div class="dropdown-menu">
+            <ul>
+                <li><a href="https://github.com/RhythmusByte">About</a></li>
+                <li><a href="https://rhythmusbytelinks.netlify.app">Contact</a></li>
+                <li><a href="https://akhilmahesh.netlify.app">Portfolio</a></li>
+                <li><a href="https://github.com/RhythmusByte" class="action_btn">Source Code</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+    <!-- Nav Bar Ends -->
+  
+  
+    <h1>URL to QR Code Generator</h1>
+    <form id="urlForm">
+        <label class="label" for="urlInput">Enter URL:</label>
+      <br>
+        <input class="link" type="text" id="urlInput" placeholder="https://example.com">
+      <br>
+        <button class="button" type="button" onclick="generateQR()">Generate QR Code</button>
+    </form>
+    <div id="qrcodeContainer"></div>
+  
+      <!-- Footer -->
+
+<footer>
+    <div class="left"> 
+     &copy; RhythmusByte 2023 
+   </div> 
+   <div class="right"> 
+     <a href="https://github.com/RhythmusByte" target="_blank"><img src="https://res.cloudinary.com/dqocmr8iu/image/upload/v1684833684/Icons/Git.png" alt="Visit"></a> 
+     <a href="https://www.linkedin.com/in/rhythmusbyte" target="_blank"><img src="https://res.cloudinary.com/dqocmr8iu/image/upload/v1684833685/Icons/LinkedIn.png" alt=""></a> 
+     <a href="https://instagram.com/rhythmusbyte" target="_blank"><img src="https://res.cloudinary.com/dqocmr8iu/image/upload/v1684833684/Icons/Instagram.png" alt=""></a> 
+   </div> 
+</footer>    
+
+    <!-- Footer Ends -->
+
+    <!-- Include QR Code library -->
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
